@@ -6,16 +6,15 @@ public class CompareNumbers {
         String numone = in.nextLine();
         System.out.println("Input num:");
         int numtwo = in.nextInt();
-        Integer num = Integer.parseInt(numone);
-        if (num > numtwo){
-            System.out.println("Большее значение: " + num);
-            double nummin = (double) numtwo;
-            System.out.println("Меньшее значение: " + nummin);
+        double dbnumone = Double.parseDouble(numone);
+        double dbnumtwo = numtwo;
+        if (dbnumone > dbnumtwo){
+            System.out.println("Большее значение: " + dbnumone);
+            System.out.println("Меньшее значение: " + dbnumtwo);
         }
         else{
-            System.out.println("Большее значение: " + numtwo);
-            double nummin = (double) num;
-            System.out.println("Меньшее значение: " + nummin);
+            System.out.printf("Большее значение: %.0f %n", dbnumtwo);
+            System.out.println("Меньшее значение: " + dbnumone);
         }
     }
 }
